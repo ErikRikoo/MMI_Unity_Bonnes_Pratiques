@@ -407,7 +407,36 @@ Il vaut donc mieux y accéder une seule fois dans le Awake et la stocker dans un
 - Eviter les méthodes Unity qui prennent une string en paramètre (FindObjectWithTag, FindObjectByName, SetTrigger, etc.)
 , elles sont très gourmandes.
 
+## Quelques principes de base intéressants
+Voici quelques principes qui sont intéressants à garder en tête quand on programme pour unity 
+([tirés de ce lien](https://www.esprit-unity.fr/nouvelle-technique-pout-structurer-son-projet-unity3d/)).
+
+### Être modulaire :
+- Tous les composants doivent être indépendants les uns des autres
+- Un non développeur doit pouvoir assembler ces composants pour créer des comportements non prévus à la base *
+
+### Être éditable par tout le monde :
+- Possibilité de changer le comportement sans toucher au code *
+- Possibilité de tout modifié en mode Play
+
+### Être simple à déboguer :
+- Composants faciles à isoler pour les tester
+- Avoir tous les outils pour déboguer un composant
+- Ne jamais corriger un bug qu’on ne comprend pas
+
+
 ## Astuces
 
 
 ## Liens
+
+### Talks
+- [Talk sur l'utilisation des Scriptable Object pour améliorer l'architecture](https://www.youtube.com/watch?v=6vmRwLYWNRo)
+- [Talk sur l'utilisation massive des SO (a inspiré l'asset Atom)](https://www.youtube.com/watch?v=raQ3iHhE_Kk)
+- [Talk sur l'application des principes SOLID dans Unity](https://www.youtube.com/watch?v=eIf3-aDTOOA)
+- [Talk de Sébastien Benard (DeepNight) sur le gameplay de Dead Cells](https://www.youtube.com/watch?v=M2jf_ST4Ez4)
+
+### Liens en tout genre
+- [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) propose un grand nombre de tutoriels d'ecellentes qualités
+- [Febucci](https://www.febucci.com/unity-tips/) regroupe de nombreuses astuces pour Unity
+- [Ronja](https://www.ronja-tutorials.com/) propose des tutoriels sur l'écriture de shader (sans shader graph)
